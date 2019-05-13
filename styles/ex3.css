@@ -1,0 +1,55 @@
+#navbar:before, #navbar:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+#navbar:after { clear: both; }  
+#navbar { zoom: 1; }  
+body {
+	font: Normal 62.5% 'Droid Serif', serif;
+	margin: 0;
+	padding: 0;
+	background: rgb(90, 127, 182);
+	color: #FFF;
+}
+header {
+	width:1000px;
+	background: #FFF ;
+	margin:0 auto;
+	margin-top:30px;
+	position: relative;
+	padding-bottom:200px;
+}
+
+
+a {
+	color: #268BD2;
+}
+
+/* Header --------------------- */
+header nav {
+	width: 100%;
+	background: #F2C53E;
+}
+
+header nav ol {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+#navbar li {
+	list-style: none;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+#navbar li a {
+	display: flex;
+	text-decoration: none;
+	font: normal 1.0rem 'Droid Sans';
+	color: #000;
+	text-transform: uppercase;
+}
+
+#navbar li a:hover {
+	background: #CB4B16;
+	color: white;
+}

@@ -1,0 +1,31 @@
+#fixed-sized-container{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    background-color: #fff;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#fixed-size{
+    outline: 2px solid red;
+    margin: 20px;
+    padding: 1px;
+}
+#item{ 
+display: inline-block;
+width: 200px;
+height: 100px;
+border: 1px solid #73AD21; 
+background-color: #990b47;
+color: #fff;
+line-height: 100px;
+text-align: center;
+font-weight: bold;
+font-size: 2vw;
+margin-bottom: 1px;
+}
+
