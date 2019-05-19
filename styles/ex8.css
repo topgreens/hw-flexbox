@@ -6,7 +6,6 @@ body {
 	width:1000px;
 	background: #FFF ;
 	margin:0 auto;
-	margin-top:30px;
 	position: relative;
     padding-bottom:200px;
     box-sizing: border-box;
@@ -14,54 +13,61 @@ body {
 header {
     display: flex;
     background: rgb(87, 84, 84);
-    color: #FFF;
-    justify-content: space-between;
-}
-
-#branding h2{
-	position: relative;
-	left: 10px;
+	justify-content: space-between;
 	text-decoration: none;
-	font: normal 2vw 'Droid Sans';
-}
-#section{
-    display: flex;
-    flex-direction: row;
 }
 
-#main-section{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2vw;
+#brand >h2{
+	position: relative;
+	left: 20px;
+	font: normal 2vw 'Droid Sans';
+	margin-top: 10px;
+}
+#brand a:hover{
+	background: #F2C348;
+	color: black;
+	text-decoration: none;
 }
 /* nav --------------------- */
-nav.group{
- 	background: #FEAB34;
+nav.groups{
 	text-transform: uppercase;
-	color: rgb(226, 6, 6);
-	justify-content: center;  
-}
-nav.group ol li {
-	list-style: none;
-	text-decoration: none;
-	padding: 10px;
+	color: #F2C348;
 }
 
- nav .group li a {
+#navbar ol{
+ display: flex;
+ text-decoration: none;
+}
+
+#navbar ol li {
+	list-style: none;
+	text-decoration: none;
+	padding: 0px;
+}
+
+#navbar li a {
 	text-decoration: none;
 	font: normal 1.1em 'Droid Sans';
 	color: #000;
 	padding: 10px 30px 10px 30px;
 }
+ 
 
- nav li a:hover {
+#navbar li a:hover {
 	background: #F2C348;
 	color: black;
 }
-#navbar ol{
- display: flex;
- text-decoration: none;
 
+#section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#main-section{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
 }
 
 /* Footer --------------------- */
@@ -75,16 +81,10 @@ footer {
 	color: white;
 }
 
-footer #right {
+ #right {
 	position: absolute;
 	left:40px;
 	top: 20px;
-}
-/* Footer Nav
--------------------------------------------------------------------------------*/
-footer {
-	color: white;
-	position: absolute;
 }
 
 footer nav {
@@ -95,19 +95,14 @@ footer nav {
 
 footer nav li {
 	display: block;
-	list-style: none;
 }
 
 footer nav li a {
 	display: block;
 	float: left;
 	text-decoration: none;
-	font: normal .9em 'Droid Sans';
-	color: #FFF;
+	font: normal 1.1em 'Droid Sans';
 	padding: 0px 10px;
-	border-right: 1px solid #ddd;
+	
 }
 
-footer nav li:last-child a {
-	border-right: none;
-}
